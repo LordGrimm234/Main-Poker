@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Casino | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
 
+    <div class="text-center">
+        <h1 class="text-6xl font-black italic tracking-tighter text-white mb-10 drop-shadow-lg">
+            ELITE <span class="text-yellow-400">CASINO</span>
+        </h1>
+
+        <button id="login-btn" class="btn-3d bg-blue-600 hover:bg-blue-500 text-white px-12 py-5 text-2xl flex items-center gap-4 mx-auto">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/layout/google.svg" class="w-8 bg-white p-1 rounded">
+            Login to Play
+        </button>
+        
+        <p class="mt-6 text-blue-200 text-sm opacity-70">SECURE GOOGLE AUTHENTICATION</p>
+    </div>
+
+    <script type="module">
+        import { loginWithGoogle } from './js/services/auth-service.js';
+        document.getElementById('login-btn').addEventListener('click', loginWithGoogle);
+    </script>
+</body>
+</html>
