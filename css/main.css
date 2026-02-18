@@ -1,1 +1,41 @@
+/* GLOBAL GAME STYLES - 8 BALL POOL VIBE */
+:root {
+    --pool-blue: #0055ff;
+    --pool-green: #4db300;
+    --pool-orange: #ff9900;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%);
+    color: white;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* THE 3D MINICLIP BUTTON */
+.btn-3d {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* This creates the 'thick' bottom look */
+    box-shadow: 0 6px 0 rgba(0,0,0,0.3), inset 0 2px 4px rgba(255,255,255,0.3);
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+.btn-3d:active {
+    /* Moves the button down when clicked to feel like a real physical button */
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+
+.bg-google-blue {
+    background-color: #4285F4;
+}
